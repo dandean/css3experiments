@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evenly Stacked Boxes</title>
+    <style type="text/css" media="screen">
+      body {
+        font-family: helvetica;
+      }
+        div.wrapper {
+          float: left;
+          background: #CCC;
+          width: 500px;
+          height: 900px;
+          color: #FFF;
+          margin: 10px;
+        
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+        }
+          div.wrapper > div {
+            -webkit-box-flex: 1.0;
+          }
+          div#box1 {
+            background-color: red;
+          }
+          div#box2 {
+            background-color: green;
+          }
+          div#box3 {
+            background-color: red;
+          }
+          div#box4 {
+            background-color: green;
+          }
+          div#box5 {
+            background-color: blue;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper1">
+      <div id="box1">Box 1</div>
+      <div id="box2">Box 2</div>
+    </div>
+
+    <div class="wrapper" id="wrapper2">
+      <div id="box3">Box 3</div>
+      <div id="box4">Box 4</div>
+      <div id="box5">Box 5</div>
+    </div>
+  </body>
+</html>
